@@ -1,4 +1,14 @@
+# Override String class to add hangeul_comp methods!
 class String
+
+  # Make combinative Hangeul characters to completive one.
+  #
+  # 조합형 코드로 작성된 문자를 완성형으로 변환합니다.
+  # 
+  # Example:
+  #   >> "\u1102\u1163\u11bc".ko_compose
+  #   => "냥"
+  
   def ko_compose
     string = self.split("")
 
@@ -44,6 +54,14 @@ class String
     result
   end
 
+  # make completive Hangeul characters to combinative one.
+  #
+  # 완성형 문자로 작성된 한글 문자를 조합형으로 변환합니다.
+  #
+  # Example:
+  #   >> "꺄아".ko_decompose
+  #   => "\u1101\u1163\u110b\u1161"
+ 
   def ko_decompose
     result = ""
 
