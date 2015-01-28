@@ -10,6 +10,10 @@ Ruby Gem for composing Hangeul(한글) combinative character to completive one, 
 Installing
 ----------
 
+.. code-block:: console
+  $ gem install hangeul_comp
+
+you can also 
 clone this repository and build gemspec & install!
 
 .. code-block:: console
