@@ -34,7 +34,7 @@
 
 ### Completive Hangeul Code
 
-  Characters on Unicode Range "Hangul Syllables" are completive — one completed Hangeul letter corresponds to one character on this range. (Writing text in this range is more effieicne, so this is commonly used.)
+  Characters on Unicode Range "Hangul Syllables" are completive — one completed Hangeul letter corresponds to one character on this range. (Writing text in this range is more efficient, so this is commonly used.)
 
  * 가 : 0xac00
  * 각 : 0xac01
