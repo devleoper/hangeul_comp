@@ -1,7 +1,12 @@
 require 'minitest/autorun'
 require 'hangeul_comp'
 
+# Test code!
+
 class HangeulCompTest < Minitest::Test
+  
+  # 완성형 한글 문자만을 골라서 조합형 문자로 분해할 수 있는지 테스트합니다..
+
   def test_decompose
     assert_equal "\u110b\u1161\u11ab\u1102\u1167\u11bc",
       "안녕".ko_decompose
@@ -15,6 +20,8 @@ class HangeulCompTest < Minitest::Test
     assert_equal "初音ミク \u1100\u1171\u110b\u1167\u11b8\u110c\u1175 \u110b\u1161\u11ad\u1102\u1175?",
       "初音ミク 귀엽지 않니?".ko_decompose
   end
+
+  # 조합형 한글 문자만을 골라서 완성형 문자로 합칠 수 있는지 테스트합니다.
 
   def test_compose
     assert_equal "배고파",
@@ -30,3 +37,4 @@ class HangeulCompTest < Minitest::Test
       "\u1108\u116e\u110b\u1175\u11bc★".ko_compose
   end
 end
+
