@@ -1,4 +1,5 @@
-# hangeul_comp
+hangeul_comp
+============
 
   Hangeul(한글) composer/decomposer gem.
 
