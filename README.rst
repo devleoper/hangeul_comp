@@ -11,6 +11,7 @@ Installing
 ----------
 
 .. code-block:: console
+
   $ gem install hangeul_comp
 
 you can also 
