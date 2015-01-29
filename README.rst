@@ -1,8 +1,11 @@
-본 gem에서 다루고 있는 기능은 ruby의 String 객체에 있는 `유니코드 정규화
+NOTE
+====
+
+이 gem을 사용하시는 것보다 ruby의 String 객체에 있는 `유니코드 정규화
 <http://ko.wikipedia.org/wiki/유니코드_정규화>`_
 에 관련된 메서드(`String.unicode_normalize
 <http://ruby-doc.org/stdlib-2.2.0/libdoc/unicode_normalize/rdoc/String.html>`_
-)를 사용하는 것이 좋습니다.
+)를 사용하는 것을 추천해드립니다.
 
 It's more recommended to use `Unicode Normalization
 <http://en.wikipedia.org/wiki/Unicode_equivalence#Normalization>`_ method(`String.unicode_normalize
@@ -51,7 +54,7 @@ Usage
 .. code-block:: ruby
 
   require 'hangeul_comp'
-
+  
   puts "꺄아".ko_decompose # => \u1101\u1163\u110b\u1161
   puts "\u1102\u1163\u11bc".ko_compose # => 냥
 
