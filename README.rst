@@ -1,3 +1,18 @@
+본 gem에서 다루고 있는 기능은 ruby의 String 객체에 있는 `유니코드 정규화
+<http://ko.wikipedia.org/wiki/유니코드_정규화>`_
+에 관련된 메서드(`String.unicode_normalize
+<http://ruby-doc.org/stdlib-2.2.0/libdoc/unicode_normalize/rdoc/String.html>`_
+)를 사용하는 것이 좋습니다.
+
+It's more recommended to use `Unicode Normalization
+<http://en.wikipedia.org/wiki/Unicode_equivalence#Normalization>`_ method(`String.unicode_normalize
+<http://ruby-doc.org/stdlib-2.2.0/libdoc/unicode_normalize/rdoc/String.html>`_ ) instead of using this gem.
+
+.. code-block:: ruby
+
+  "한글".ko_decompose == "한글".unicode_normalize(:nfd) # true
+  
+
 hangeul_comp
 ============
 
